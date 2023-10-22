@@ -1,0 +1,84 @@
+.header
+    &__hat
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__logo
+            width: 97px
+            height: 30px
+        &__contacts
+            color: #fff
+            font-size: 14px
+            font-style: normal
+            font-weight: 500
+            text-decoration: none
+            .email, .phone
+                position: relative
+                color: #fff
+                font-size: 14px
+                font-style: normal
+                font-weight: 500
+                text-decoration: none
+                margin-right: 25px
+                &::after
+                    content: ''
+                    position: absolute
+                    width: 100%
+                    transform: scaleX(0)
+                    height: 2px
+                    bottom: 0
+                    top: 15px
+                    left: 0
+                    background-color: #fff
+                    transform-origin: bottom right
+                    transition: transform 0.25s ease-out
+                &:hover
+                    &::after
+                        transform: scaleX(1)
+                        transform-origin: bottom left
+        &__search
+            cursor: pointer
+    hr
+        margin-top: 20px
+        color: #fff
+    &__list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+        list-style-type: none
+        font-size: 14px
+        font-style: normal
+        font-weight: 700
+        text-transform: uppercase
+        padding-left: 0
+        transition: 0.7s all
+        a
+            color: #fff
+            text-decoration: none
+        li
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                width: 100%
+                transform: scaleX(0)
+                height: 2px
+                bottom: 0
+                top: 15px
+                left: 0
+                background-color: #fff
+                transform-origin: bottom right
+                transition: transform 0.25s ease-out
+            &:hover
+                &::after
+                    transform: scaleX(1)
+                    transform-origin: bottom left
+    &__burger
+        display: none
+    &_cont
+        background-color: #133D8D
+        height: 180px
+        padding-top: 25px
+        padding-left: 25px
+        padding-right: 25px

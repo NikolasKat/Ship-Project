@@ -1,0 +1,82 @@
+.slider
+    min-height: 530px
+    padding: 150px 20px 150px 20px
+    &__inner
+        position: relative
+        width: 85%
+        margin: 0 auto
+    &__part
+        display: flex
+        padding: 60px
+        background-color: rgba(19, 61, 141, 0.15)
+        // border-radius: 10px
+    &__img
+        width: 50%
+    &__descr
+        margin-right: 60px
+        width: 50%
+        &__blue-piece
+            width: 160px
+            height: 30px
+            padding-top: 10px
+            background-color: #133D8D
+            font-size: 14px
+            font-weight: 300
+            color: #fff
+            text-align: center
+            align-items: center
+            margin-bottom: 40px
+        &__title
+            color: #333
+            font-size: 18px
+            font-weight: 700
+            text-transform: uppercase
+            margin-bottom: 25px
+        &__list
+            list-style-type: none
+            width: 390px
+            font-size: 14px
+            font-weight: 400
+            line-height: 20px
+            color: #333
+            li
+                position: relative
+                margin-bottom: 15px
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 8px
+                    height: 8px
+                    background-color: #BD0007
+                    left: -21px
+                    top: 7px
+    .slick-prev
+        position: absolute
+        width: 60px
+        height: 60px
+        top: 50%
+        transform: translateY(-50%)
+        left: -112px
+        border: none
+        background-color: #133D8D
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            background-color: #2EE59D
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.9)
+            border-radius: 10%
+    .slick-next
+        position: absolute
+        width: 60px
+        height: 60px
+        background-color: #133D8D
+        border: none
+        top: 50%
+        transform: translateY(-50%)
+        right: -112px
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+                background-color: #2EE59D
+                box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.9)
+                border-radius: 10%

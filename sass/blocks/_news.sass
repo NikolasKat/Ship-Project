@@ -1,0 +1,64 @@
+.news
+    min-height: 480px
+    padding: 137px 20px 160px 20px
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__name
+        color: #333
+        font-size: 36px
+        font-weight: 400
+        text-transform: uppercase
+        &_white
+            color: #fff
+    &__subname
+        color: #133D8D
+        font-size: 18px
+        font-weight: 700
+        text-transform: uppercase
+        &_white
+            color: #fff
+    &__descr
+        display: flex
+        justify-content: space-between
+        // align-items: center
+        flex-wrap: wrap
+        margin-top: 100px
+        &__block
+            width: 250px
+            height: 313px
+            padding: 25px 29px 25px 25px
+            background: url('../img/news_img1.png') center (center / cover) no-repeat
+            &_block2
+                background: url('../img/news_img2.png') center (center / cover) no-repeat
+            &_block3
+                background: url('../img/news_img3.png') center (center / cover) no-repeat
+            &_block4
+                background: url('../img/news_img4.png') center (center / cover) no-repeat
+            .block-date
+                width: 140px
+                height: 25px
+                margin-bottom: 108px
+                background-color: #BD0007
+                text-align: center
+                padding-top: 8px
+                font-size: 13px
+                font-weight: 300
+                color: #fff
+                &_date3
+                    margin-bottom: 130px
+            .block-bigdescr
+                font-size: 16px
+                font-weight: 500
+                color: #fff
+                line-height: 140%
+                margin-bottom: 15px
+            .block-smalldescr
+                overflow: hidden
+                text-overflow: ellipsis
+                whitespace: nowrap
+                font-size: 14px
+                font-weight: 100
+                line-height: 140%
+                color: #fff
